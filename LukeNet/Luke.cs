@@ -3342,7 +3342,7 @@ namespace Lucene.Net.LukeNet
 				}
 
 				// Trying to create with default constructor
-				return (Analyzer) Activator.CreateInstance(analyzerType);
+				return (Analyzer) Activator.CreateInstance(analyzerType, LuceneVersion.LUCENE_48);
 			}
 			catch(Exception)
 			{return null; }
